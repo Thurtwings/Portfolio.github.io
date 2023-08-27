@@ -1,105 +1,209 @@
 <!DOCTYPE html>
+<!-- Indique que ce document est un document HTML5 -->
 <html>
-
-<head>
-    <title>Game Developer Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
-
-<body>
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Game Developer</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to my portfolio!</h1>
-        <p class="lead">I'm a game developer with a passion for creating immersive and engaging experiences.</p>
-    </div>
-
-    <div id="about">
-        <h2>About</h2>
-        <p>I am a game developer with experience in Unity, C#, and 3D modeling. I have a strong understanding of game design principles and enjoy experimenting with new technologies and techniques. I am always looking to push boundaries and create unique and memorable experiences for players.</p>
-    </div>
-
-    <div id="projects">
-        <h2>Projects</h2>
-        <div class="card-group">
-            <div class="card">
-                <img src="project1.png" class="card-img-top" alt="Project 1">
-                <div class="card-body">
-                    <h5 class="card-title">Project 1</h5>
-                    <p class="card-text">A 3D puzzle game built in Unity using C#.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="project2.png" class="card-img-top" alt="Project 2">
-                <div class="card-body">
-                    <h5 class="card-title">Project 2</h5>
-                    <p class="card-text">A 2D platformer game built in Unity using C#.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="project3.png" class="card-img-top" alt="Project 3">
-                <div class="card-body">
-                    <h5 class="card-title">Project 3</h5>
-                    <p class="card-text">A virtual reality game built in Unity using C# and VR SDK.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="skills">
-        <h2>Skills</h2>
+  <head>
+    <meta charset="utf-8">
+    <!-- Définit l'encodage de caractères du document -->
+    <title>Portefolio de développeur de jeux vidéo</title>
+    <!-- Définit le titre du document qui sera affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Inclut le fichier de feuille de style CSS dans le document -->
+	<!--<script src="mon-fichier.php"></script>-->
+	<!-- Inclut le fichier PHP dans le document -->
+	<!--<script src="mon-fichier.js"></script>-->
+	 <!--Inclut le fichier JavaScript dans le document -->
+  
+  </head>
+  <!-- Définit la partie de l'en-tête du document -->
+  <body>
+    <!-- Définit la partie principale du document -->
+    <header>
+      <!-- Définit l'en-tête du document -->
+      <h1>Portefolio de développeur de jeux vidéo</h1>
+      <!-- Affiche un titre de premier niveau -->
+      <nav>
+        <!-- Définit une zone de navigation -->
         <ul>
-            <li>Unity</li>
-            <li>C#</li>
-            <li>3D modeling</li>
-            <li>Game design</li>
-            <li>Virtual Reality</li>
-            <li>Artificial intelligence</li>
+          <!-- Définit une liste non ordonnée -->
+          <li><a href="#accueil">Accueil</a></li>
+          <!-- Affiche un élément de liste avec un lien vers la section "accueil" -->
+          <li><a href="#projets">Projets</a></li>
+          <!-- Affiche un élément de liste avec un lien vers la section "projets" -->
+		      <li><a href="#compétences">Compétences</a></li>
+          <!-- Affiche un élément de liste avec un lien vers la section "compétences" -->
+          <li><a href="#contact">Contact</a></li>
+          <!-- Affiche un élément de liste avec un lien vers la section "contact" -->
+          <li><a href="https://drive.google.com/file/d/12TkC53ABa2-mtS4Or0Sm1Sr1Q34kXl5M/view?usp=share_link" 
+					target="_blank">Consulter mon CV</a></li>
+          <!-- Affiche un élément de liste avec un lien vers le CV stocké sur Google Drive. Le lien s'ouvrira dans un nouvel onglet -->
+		</ul>
+      </nav>
+    </header>
+    <main>
+      <section id="accueil">
+        <!-- Définit une section du document avec l'identifiant "accueil" -->
+        <h2>À propos de moi</h2>
+        <!-- Affiche un titre de deuxième niveau -->
+        <img src="images/Photo de profil.jpg" alt="Ma photo de profil">
+        <!-- Affiche une image avec une description alternative -->
+		<p>Bonjour, je suis un développeur de jeux vidéo passionné. 
+		J'ai travaillé sur de nombreux projets au fil des ans et j'ai 
+		acquis une solide expérience dans le développement de jeux sur 
+		différentes plates-formes. Je suis également très curieux et 
+		j'aime explorer de nouvelles idées de gameplay et de nouvelles technologies. 
+		J'espère que vous apprécierez mon portefolio et que vous prendrez 
+		contact avec moi pour discuter de vos projets ou de votre entreprise.</p>
+      </section>
+      
+      <section id="compétences">
+        <!-- Définit une section du document avec l'identifiant "compétences" -->
+        <h2>Mes compétences</h2>
+        <!-- Affiche un titre de deuxième niveau -->
+        <h3>Langages de programmation</h3>
+        <!-- Affiche un titre de troisième niveau -->
+        <ul>
+			<!-- Débute une liste non ordonnée -->
+			<li id="cs">C#</li>
+			<li id="cpp">C++</li>
+			<li id="php">PHP</li>
+			<li id="java">Java</li>
+			<li id="js">JS</li>
+			<li id="py">Py</li>
+			<li id="html5">HTML</li>
+			<li id="css3">CSS</li>
+		</ul>
+        <!-- Ferme la liste non ordonnée -->
+        <h3>Moteurs de jeu</h3>
+        <!-- Affiche un titre de troisième niveau -->
+        <ul>
+          <!-- Débute une liste non ordonnée -->
+          <li>Unity</li>
+          <!-- Affiche un élément de liste -->
+          <li>Unreal Engine</li>
+          <!-- Affiche un élément de liste -->
         </ul>
-    </div>
+        <!-- Ferme la liste non ordonnée -->
+		<h3>Logiciels</h3>
+        <!-- Affiche un titre de troisième niveau -->
+        <ul>
+          <!-- Débute une liste non ordonnée -->
+          <li>Photoshop</li>
+          <!-- Affiche un élément de liste -->
+		      <li>Illustrator</li>
+          <!-- Affiche un élément de liste -->
+		      <li>Premiere Pro</li>
+          <!-- Affiche un élément de liste -->
+          <li>Blender</li>
+          <!-- Affiche un élément de liste -->
+		      <li>Word</li>
+          <!-- Affiche un élément de liste -->
+		      <li>Excel</li>
+          <!-- Affiche un élément de liste -->
+        </ul>
+        <!-- Ferme la liste non ordonnée -->
+      </section>
+      <section id="projets">
+      
+        <h1>Mes projets</h1>
+        <section>
+          <h3>Jeu platformer 3D "A Robot Journey"</h3>
+          <img src="" alt=""id="B3E">
+          <!-- Affiche une image avec une description alternative -->
+          <p>Ce jeu a été développé en utilisant le moteur de jeu Unity.
+            Il n'a été publié mais a reçu de nombreuses critiques positives.
+            J'ai été responsable de la programmation de toute la partie gameplay. J'ai également travaillé
+            sur l'interface utilisateur et les effets visuels.</p>
 
-    <div id="contact">
-        <h2>Contact</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+
+ <!--Ajoute un écouteur d'événement qui lance la vidéo lorsque l'image est cliquée -->
+<!--<script>
+  document.getElementById("B3E").addEventListener("click", function () {
+    document.getElementById("video").style.display = "block";  // Affiche la vidéo
+  });
+</script>-->
+            
+            <!-- Ajoute un écouteur d'événement qui lance la vidéo lorsque l'image est cliquée -->
+          <!-- <script>
+              document.getElementById("B3E").addEventListener("click", function () {
+                document.getElementById("video").style.display = "block";  // Affiche la vidéo
+                document.getElementById("video").play();  // Lance la vidéo
+              });
+            </script>
+        </section>-->
+        <section>
+          <h3>Jeu de rôle en ligne</h3>
+          <img src="" alt="">
+          <!-- Affiche une image avec une description alternative -->
+          <p>Ce jeu de rôle en ligne a été développé en utilisant le moteur de jeu Unreal Engine. C'est un jeu massivement
+            multijoueur avec une communauté en ligne active. J'ai été responsable de la programmation du moteur de jeu et de
+            la création de contenu pour le jeu. J'ai également travaillé sur l'intégration de systèmes de microtransactions
+            et sur la gestion de la communauté en ligne.</p>
+        </section>
+        <section>
+          <h2>Jeu de puzzle en réalité augmentée</h2>
+          <img src="" alt="">
+          <!-- Affiche une image avec une description alternative -->
+          <p>Ce jeu de puzzle en réalité augmentée a été développé pour une plateforme de réalité augmentée mobile. J'ai été
+            responsable de la programmation du moteur de jeu et de la création de niveaux de puzzle. J'ai également
+            travaillé sur l'intégration de la réalité augmentée dans le jeu.</p>
+        </section>
+      </section>
+      <section id="contact">
+        <!-- Définit une section du document avec l'identifiant "contact" -->
+		<h2>Me contacter</h2>
+        <!-- Affiche un titre de deuxième niveau -->
+        <form id="formulaire-contact">
+          <!-- Débute un formulaire -->
+          <label for="nom">Nom</label>
+          <!-- Affiche un label pour un champ de formulaire -->
+          <input type="text" id="nom" name="nom" required>
+          <!-- Affiche un champ de texte avec l'identifiant "nom" et le nom "nom", qui est requis -->
+          <br>
+          <!-- Ajoute un saut de ligne -->
+          <label for="email">Email</label>
+          <!-- Affiche un label pour un champ de formulaire -->
+          <input type="email" id="email" name="email" required>
+          <!-- Affiche un champ de texte pour l'adresse email avec l'identifiant "email" et le nom "email", qui est requis -->
+          <br>
+          <!-- Ajoute un saut de ligne -->
+          <label for="message">Message</label>
+          <!-- Affiche un label pour un champ de formulaire -->
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <!-- Affiche une zone de texte avec l'identifiant "message" et le nom "message", qui est requis et a 5 lignes -->
+          <br>
+          <!-- Ajoute un saut de ligne -->
+          <input type="submit" value="Envoyer">
+          <!-- Affiche un bouton de soumission -->
         </form>
-    </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOM"></script>
-    </body>
-    </html> "
+        <!-- Ferme le formulaire -->
+      </section>
+      <!-- Ferme la section "contact" -->
+    </main>
+    <!-- Ferme la section principale -->
+    <footer>
+	<!-- Définit un pied de page -->
+      <p>Copyright 2023 Leneveu Steeven</p>
+      <!-- Affiche un paragraphe avec le copyright -->
+      <nav>
+        <!-- Définit une zone de navigation -->
+        <ul>
+          <!-- Définit une liste non ordonnée -->
+          <li><a href="#accueil">Accueil</a></li>
+          <!-- Affiche un élément de liste avec un lien vers la section "accueil" -->
+          <li><a href="projets.html" target="_blank">Projets</a></li>
+          <!-- Affiche un élément de liste avec un lien vers la section "projets" -->
+          <li><a href="#compétences">Compétences</a></li>
+          <!-- Affiche un élément de liste avec un lien vers la section "compétences" -->
+          <li><a href="#contact">Contact</a></li>
+          <!-- Affiche un élément de liste avec un lien vers la section "contact" -->    
+          <li><a href="mentions.html" target="_blank"> Mentions Légales</a></li>
+        </ul>
+      </nav>
+      <!-- Ferme la liste non ordonnée -->
+    </footer>
+    <!-- Ferme le pied de page -->
+  </body>
+  <!-- Ferme le corps du document -->
+</html>
+<!-- Ferme le document HTML -->
+

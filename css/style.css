@@ -1,0 +1,632 @@
+/* body {
+  background-image: url('../images/background.png');
+  background-size:cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin: 0 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: orange;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+
+section {
+  width: 100%;
+  margin: 20px;
+}
+
+section#accueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#accueil img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+section#accueil img:hover {
+  transform: scale(1.1);
+}
+
+section#accueil h2 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+section#accueil p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section#projets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#projets h2 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+section#projets article {
+  width: 100%;
+  margin: 20px;
+}
+
+section#projets article h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+section#projets article img {
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section#projets article p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section#compétences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#compétences h2 
+{
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+section#compétences ul 
+{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section#compétences li 
+{
+  margin: 10px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255,0.5);
+  border: 1px solid rgb(97, 187, 109);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+section#compétences li:hover 
+{
+  transform: scale(1.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+  
+  
+}
+section#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#contact h2 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+section#contact p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+section#contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section#contact form label {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+section#contact form input,
+section#contact form textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid red;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+section#contact form input:focus,
+section#contact form textarea:focus {
+  border: 1px solid red;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+section#contact form input[type="submit"] {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section#contact form input[type="submit"]:hover {
+  background-color: red;
+}
+
+section#contact h3 {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+section#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+section#contact li {
+  margin: 0 10px;
+}
+
+section#contact a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+section#contact a:hover {
+  color: red;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+li#cs:hover {
+  background-image: url('../images/Logos/LP/cs.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+li#cpp:hover {
+  background-image: url('../images/Logos/LP/cpp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+li#php:hover {
+  background-image: url('../images/Logos/LP/php.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+li#java:hover {
+  background-image: url('../images/Logos/LP/java.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+li#js:hover {
+  background-image: url('../images/Logos/LP/js.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+li#py:hover {
+  background-image: url('../images/Logos/LP/py.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+li#html5:hover {
+  background-image: url('../images/Logos/LP/html5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+li#css3:hover {
+  background-image: url('../images/Logos/LP/css3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer nav li {
+  margin: 0 10px;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+footer nav a:hover {
+  color: orange;
+}
+
+ */
+
+ /* Define CSS variables for colors */
+:root {
+  --bg-color: rgba(0, 0, 0, 0.5);
+  --primary-color: #333;
+  --secondary-color: white;
+  --accent-color: orange;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Use semantic HTML tags */
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+
+section {
+  width: 100%;
+  margin: 20px;
+}
+
+section#accueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#accueil img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
+}
+
+section#accueil img:hover {
+  transform: scale(1.1);
+}
+
+section#accueil h2 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+section#accueil p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section#projets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#projets h2 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+section#projets article {
+  width: 100%;
+  margin: 20px;
+}
+
+section#projets article h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+section#projets article img {
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+  box-shadow: var(--box-shadow);
+}
+
+section#projets article p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section#compétences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#compétences h2 
+{
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+section#compétences ul 
+{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section#compétences li 
+{
+  margin: 10px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255,0.5);
+  border: 1px solid rgb(97, 187, 109);
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+section#compétences li:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+section#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#contact h2 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+section#contact p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+section#contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section#contact form label {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+section#contact form input,
+section#contact form textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid red;
+  box-shadow: var(--box-shadow);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+section#contact form input:focus,
+section#contact form textarea:focus {
+  border: 1px solid red;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+section#contact form input[type="submit"] {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section#contact form input[type="submit"]:hover {
+  background-color: red;
+}
+
+section#contact h3 {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+section#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+section#contact li {
+  margin: 0 10px;
+}
+
+section#contact a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+section#contact a:hover {
+  color: red;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer nav li {
+  margin: 0 10px;
+}
+
+footer nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+footer nav a:hover {
+  color: var(--accent-color);
+}
