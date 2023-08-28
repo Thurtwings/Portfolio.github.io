@@ -1,27 +1,46 @@
-// Handle the skill progress bars
-document.addEventListener("DOMContentLoaded", () => {
-    const progressBars = document.querySelectorAll('.progress-bar');
+var language = language || 'fr';
 
-    progressBars.forEach((bar) => {
-        const level = bar.getAttribute('data-level');
-        setTimeout(() => {
-            bar.style.width = level + '%';
-            bar.parentNode.style.opacity = 1;
-            bar.parentNode.style.transform = 'translateY(0)';
-        }, 500);
-    });
+function toggleLanguage() {
+    if (language === 'fr') {
+        document.getElementById('languageToggle').innerText = 'Switch to French';
+        document.getElementById('main_title').innerText = 'Welcome to My Portfolio';
+        document.getElementById('about_me_title').innerText = 'About Me';
+        document.getElementById('skills_title').innerText = 'Skills';
+        document.getElementById('experience_title').innerText = 'Experience';
+        document.getElementById('portfolio_title').innerText = 'Portfolio';
+        document.getElementById('contact_title').innerText = 'Contact';
+        document.getElementById('tagline').innerText = 'Experienced Unity and Web Developer';
+        document.getElementById('about_me_description').innerText = 'I am a passionate developer with expertise in Unity, C#, and web development.';
+        language = 'en';
+    } else {
+        document.getElementById('languageToggle').innerText = 'Traduire en Anglais';
+        document.getElementById('main_title').innerText = 'Bienvenue sur mon portfolio';
+        document.getElementById('about_me_title').innerText = 'À propos de moi';
+        document.getElementById('skills_title').innerText = 'Compétences';
+        document.getElementById('experience_title').innerText = 'Expérience';
+        document.getElementById('portfolio_title').innerText = 'Portfolio';
+        document.getElementById('contact_title').innerText = 'Contact';
+        document.getElementById('tagline').innerText = 'Développeur Unity et Web expérimenté';
+        document.getElementById('about_me_description').innerText = 'Je suis un développeur passionné avec une expertise en Unity, C# et développement web.';
+        language = 'fr';
+    }
+}
 
-    // Animate name in header
-    setTimeout(() => {
-        const nameElement = document.getElementById('nameAnimation');
-        nameElement.textContent = 'Steeven Leneveu';
-        nameElement.style.opacity = 1;
-    }, 500);
 
-    // Theme toggle
-    const themeToggle = document.getElementById('themeToggle');
+
+function toggleExperience(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+// Theme toggle button
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
     themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-theme');
-        themeToggle.textContent = document.body.classList.contains('dark-theme') ? 'Thème Clair' : 'Thème Sombre';
     });
 });
