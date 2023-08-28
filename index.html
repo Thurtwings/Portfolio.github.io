@@ -1,209 +1,177 @@
+
 <!DOCTYPE html>
-<!-- Indique que ce document est un document HTML5 -->
-<html>
-  <head>
-    <meta charset="utf-8">
-    <!-- Définit l'encodage de caractères du document -->
-    <title>Portefolio de développeur de jeux vidéo</title>
-    <!-- Définit le titre du document qui sera affiché dans l'onglet du navigateur -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Inclut le fichier de feuille de style CSS dans le document -->
-	<!--<script src="mon-fichier.php"></script>-->
-	<!-- Inclut le fichier PHP dans le document -->
-	<!--<script src="mon-fichier.js"></script>-->
-	 <!--Inclut le fichier JavaScript dans le document -->
-  
-  </head>
-  <!-- Définit la partie de l'en-tête du document -->
-  <body>
-    <!-- Définit la partie principale du document -->
-    <header>
-      <!-- Définit l'en-tête du document -->
-      <h1>Portefolio de développeur de jeux vidéo</h1>
-      <!-- Affiche un titre de premier niveau -->
-      <nav>
-        <!-- Définit une zone de navigation -->
-        <ul>
-          <!-- Définit une liste non ordonnée -->
-          <li><a href="#accueil">Accueil</a></li>
-          <!-- Affiche un élément de liste avec un lien vers la section "accueil" -->
-          <li><a href="#projets">Projets</a></li>
-          <!-- Affiche un élément de liste avec un lien vers la section "projets" -->
-		      <li><a href="#compétences">Compétences</a></li>
-          <!-- Affiche un élément de liste avec un lien vers la section "compétences" -->
-          <li><a href="#contact">Contact</a></li>
-          <!-- Affiche un élément de liste avec un lien vers la section "contact" -->
-          <li><a href="https://drive.google.com/file/d/12TkC53ABa2-mtS4Or0Sm1Sr1Q34kXl5M/view?usp=share_link" 
-					target="_blank">Consulter mon CV</a></li>
-          <!-- Affiche un élément de liste avec un lien vers le CV stocké sur Google Drive. Le lien s'ouvrira dans un nouvel onglet -->
-		</ul>
-      </nav>
-    </header>
-    <main>
-      <section id="accueil">
-        <!-- Définit une section du document avec l'identifiant "accueil" -->
-        <h2>À propos de moi</h2>
-        <!-- Affiche un titre de deuxième niveau -->
-        <img src="images/Photo de profil.jpg" alt="Ma photo de profil">
-        <!-- Affiche une image avec une description alternative -->
-		<p>Bonjour, je suis un développeur de jeux vidéo passionné. 
-		J'ai travaillé sur de nombreux projets au fil des ans et j'ai 
-		acquis une solide expérience dans le développement de jeux sur 
-		différentes plates-formes. Je suis également très curieux et 
-		j'aime explorer de nouvelles idées de gameplay et de nouvelles technologies. 
-		J'espère que vous apprécierez mon portefolio et que vous prendrez 
-		contact avec moi pour discuter de vos projets ou de votre entreprise.</p>
-      </section>
-      
-      <section id="compétences">
-        <!-- Définit une section du document avec l'identifiant "compétences" -->
-        <h2>Mes compétences</h2>
-        <!-- Affiche un titre de deuxième niveau -->
-        <h3>Langages de programmation</h3>
-        <!-- Affiche un titre de troisième niveau -->
-        <ul>
-			<!-- Débute une liste non ordonnée -->
-			<li id="cs">C#</li>
-			<li id="cpp">C++</li>
-			<li id="php">PHP</li>
-			<li id="java">Java</li>
-			<li id="js">JS</li>
-			<li id="py">Py</li>
-			<li id="html5">HTML</li>
-			<li id="css3">CSS</li>
-		</ul>
-        <!-- Ferme la liste non ordonnée -->
-        <h3>Moteurs de jeu</h3>
-        <!-- Affiche un titre de troisième niveau -->
-        <ul>
-          <!-- Débute une liste non ordonnée -->
-          <li>Unity</li>
-          <!-- Affiche un élément de liste -->
-          <li>Unreal Engine</li>
-          <!-- Affiche un élément de liste -->
-        </ul>
-        <!-- Ferme la liste non ordonnée -->
-		<h3>Logiciels</h3>
-        <!-- Affiche un titre de troisième niveau -->
-        <ul>
-          <!-- Débute une liste non ordonnée -->
-          <li>Photoshop</li>
-          <!-- Affiche un élément de liste -->
-		      <li>Illustrator</li>
-          <!-- Affiche un élément de liste -->
-		      <li>Premiere Pro</li>
-          <!-- Affiche un élément de liste -->
-          <li>Blender</li>
-          <!-- Affiche un élément de liste -->
-		      <li>Word</li>
-          <!-- Affiche un élément de liste -->
-		      <li>Excel</li>
-          <!-- Affiche un élément de liste -->
-        </ul>
-        <!-- Ferme la liste non ordonnée -->
-      </section>
-      <section id="projets">
-      
-        <h1>Mes projets</h1>
-        <section>
-          <h3>Jeu platformer 3D "A Robot Journey"</h3>
-          <img src="" alt=""id="B3E">
-          <!-- Affiche une image avec une description alternative -->
-          <p>Ce jeu a été développé en utilisant le moteur de jeu Unity.
-            Il n'a été publié mais a reçu de nombreuses critiques positives.
-            J'ai été responsable de la programmation de toute la partie gameplay. J'ai également travaillé
-            sur l'interface utilisateur et les effets visuels.</p>
 
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Portfolio de Steeven Leneveu</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.css" rel="stylesheet"/>
+<style>
+  ul {
+    list-style-type: none;
+  }
+</style>
+</head>
+<body>
+<!-- Add your logo here in the navbar --><!-- Add your header image here --><nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">Portfolio</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#skills">Skills</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#experience">Experience</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#portfolio">Portfolio</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="bg-primary text-white text-center py-5" id="home">
+<div class="container">
+<h1 id="homeTitle">Bienvenue sur mon portfolio</h1>
+<p id="homeSubtitle">Développeur Unity et Web expérimenté</p>
+</div>
+</section>
+<section class="text-center py-5" id="about">
+<div class="container">
+<img alt="Your Photo" id="aboutPhoto" src="placeholder_about_photo.jpg" style="width: 200px; height: 200px;"/>
+<h2 id="aboutTitle">À propos de moi</h2>
+<p id="aboutText">Je suis un développeur passionné avec une expertise en Unity, C# et développement web.</p>
+</div>
+</section>
+<section class="text-center py-5" id="skills">
+<div class="container">
+<h2 id="skillsTitle">Compétences</h2>
+<div class="row">
+<div class="col-md-3">
+<h5>Column 1</h5>
+<p>Placeholder Text</p>
+</div>
+<div class="col-md-3">
+<h5>Column 2</h5>
+<p>Placeholder Text</p>
+</div>
+<div class="col-md-3">
+<h5>Column 3</h5>
+<p>Placeholder Text</p>
+</div>
+<div class="col-md-3">
+<h5>Column 4</h5>
+<p>Placeholder Text</p>
+</div>
+</div>
+</div>
+</section>
+<section class="text-center py-5" id="experience">
+<div class="container">
+<h2 id="experienceTitle">Expérience</h2>
+<ul id="experienceList">
+<li>Unity Developer at Company A</li>
+<li>Web Developer at Company B</li>
+<li>Intern at Company C</li>
+</ul>
+</div>
+</section>
+<section class="text-center py-5" id="portfolio">
+<div class="container">
+<h2 id="portfolioTitle">Portfolio</h2>
+<div class="row">
+<div class="col-md-4">
+<div class="card" id="card1" onclick="toggleCardDetails('card1')">
+<img alt="Project A" src="placeholder_project_img.jpg"/>
+<div class="card-body">
+<h5>Project A</h5>
+<p>Short description</p>
+<div class="card-details" style="display:none;">
+<p>Full description</p>
+<!-- Add video or carousel here -->
+</div>
+</div>
+</div>
+</div>
+<!-- Add more cards here -->
+</div>
+</div>
+</section>
 
- <!--Ajoute un écouteur d'événement qui lance la vidéo lorsque l'image est cliquée -->
-<!--<script>
-  document.getElementById("B3E").addEventListener("click", function () {
-    document.getElementById("video").style.display = "block";  // Affiche la vidéo
+<div class="container">
+<h2 id="contactTitle">Contact</h2>
+<form action="https://formspree.io/f/{your_form_id}" class="bg-light p-5 rounded" id="contactForm" method="POST">
+<div class="mb-3">
+<label class="form-label" for="name">Nom</label>
+<input class="form-control" id="name" name="name" required="" type="text"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="email">Email</label>
+<input class="form-control" id="email" name="_replyto" required="" type="email"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="message">Message</label>
+<textarea class="form-control" id="message" name="message" required="" rows="4"></textarea>
+</div>
+<button class="btn btn-primary" type="submit">Envoyer le message</button>
+</form>
+</div>
+
+<button class="btn btn-secondary" id="languageToggle" onclick="toggleLanguage()">Switch to English</button>
+
+<script>
+  let language = 'fr'; // Default language is French
+
+  function toggleLanguage() {
+    if (language === 'fr') {
+      document.getElementById('contactTitle').innerText = 'Contact';
+      document.getElementById('languageToggle').innerText = 'Switch to English';
+      language = 'en';
+    } else {
+      document.getElementById('contactTitle').innerText = 'Contact';
+      document.getElementById('languageToggle').innerText = 'Passer au Français';
+      language = 'fr';
+    }
+  }
+</script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
   });
-</script>-->
-            
-            <!-- Ajoute un écouteur d'événement qui lance la vidéo lorsque l'image est cliquée -->
-          <!-- <script>
-              document.getElementById("B3E").addEventListener("click", function () {
-                document.getElementById("video").style.display = "block";  // Affiche la vidéo
-                document.getElementById("video").play();  // Lance la vidéo
-              });
-            </script>
-        </section>-->
-        <section>
-          <h3>Jeu de rôle en ligne</h3>
-          <img src="" alt="">
-          <!-- Affiche une image avec une description alternative -->
-          <p>Ce jeu de rôle en ligne a été développé en utilisant le moteur de jeu Unreal Engine. C'est un jeu massivement
-            multijoueur avec une communauté en ligne active. J'ai été responsable de la programmation du moteur de jeu et de
-            la création de contenu pour le jeu. J'ai également travaillé sur l'intégration de systèmes de microtransactions
-            et sur la gestion de la communauté en ligne.</p>
-        </section>
-        <section>
-          <h2>Jeu de puzzle en réalité augmentée</h2>
-          <img src="" alt="">
-          <!-- Affiche une image avec une description alternative -->
-          <p>Ce jeu de puzzle en réalité augmentée a été développé pour une plateforme de réalité augmentée mobile. J'ai été
-            responsable de la programmation du moteur de jeu et de la création de niveaux de puzzle. J'ai également
-            travaillé sur l'intégration de la réalité augmentée dans le jeu.</p>
-        </section>
-      </section>
-      <section id="contact">
-        <!-- Définit une section du document avec l'identifiant "contact" -->
-		<h2>Me contacter</h2>
-        <!-- Affiche un titre de deuxième niveau -->
-        <form id="formulaire-contact">
-          <!-- Débute un formulaire -->
-          <label for="nom">Nom</label>
-          <!-- Affiche un label pour un champ de formulaire -->
-          <input type="text" id="nom" name="nom" required>
-          <!-- Affiche un champ de texte avec l'identifiant "nom" et le nom "nom", qui est requis -->
-          <br>
-          <!-- Ajoute un saut de ligne -->
-          <label for="email">Email</label>
-          <!-- Affiche un label pour un champ de formulaire -->
-          <input type="email" id="email" name="email" required>
-          <!-- Affiche un champ de texte pour l'adresse email avec l'identifiant "email" et le nom "email", qui est requis -->
-          <br>
-          <!-- Ajoute un saut de ligne -->
-          <label for="message">Message</label>
-          <!-- Affiche un label pour un champ de formulaire -->
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <!-- Affiche une zone de texte avec l'identifiant "message" et le nom "message", qui est requis et a 5 lignes -->
-          <br>
-          <!-- Ajoute un saut de ligne -->
-          <input type="submit" value="Envoyer">
-          <!-- Affiche un bouton de soumission -->
-        </form>
-        <!-- Ferme le formulaire -->
-      </section>
-      <!-- Ferme la section "contact" -->
-    </main>
-    <!-- Ferme la section principale -->
-    <footer>
-	<!-- Définit un pied de page -->
-      <p>Copyright 2023 Leneveu Steeven</p>
-      <!-- Affiche un paragraphe avec le copyright -->
-      <nav>
-        <!-- Définit une zone de navigation -->
-        <ul>
-          <!-- Définit une liste non ordonnée -->
-          <li><a href="#accueil">Accueil</a></li>
-          <!-- Affiche un élément de liste avec un lien vers la section "accueil" -->
-          <li><a href="projets.html" target="_blank">Projets</a></li>
-          <!-- Affiche un élément de liste avec un lien vers la section "projets" -->
-          <li><a href="#compétences">Compétences</a></li>
-          <!-- Affiche un élément de liste avec un lien vers la section "compétences" -->
-          <li><a href="#contact">Contact</a></li>
-          <!-- Affiche un élément de liste avec un lien vers la section "contact" -->    
-          <li><a href="mentions.html" target="_blank"> Mentions Légales</a></li>
-        </ul>
-      </nav>
-      <!-- Ferme la liste non ordonnée -->
-    </footer>
-    <!-- Ferme le pied de page -->
-  </body>
-  <!-- Ferme le corps du document -->
-</html>
-<!-- Ferme le document HTML -->
+</script>
+<script>
+  // Function to toggle card details
+  function toggleCardDetails(cardId) {
+    const card = document.getElementById(cardId);
+    const details = card.querySelector('.card-details');
 
+    if (details.style.display === 'none' || details.style.display === '') {
+      details.style.display = 'block';
+    } else {
+      details.style.display = 'none';
+    }
+  }
+</script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.js" type="text/javascript"></script>
+</html>

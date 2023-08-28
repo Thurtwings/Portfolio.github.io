@@ -1,0 +1,71 @@
+/* Styles de base */
+body, body.dark-theme {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+body.dark-theme {
+    background: #333;
+    color: #f4f4f4;
+}
+
+header {
+    background-color: #50b3a2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#nameAnimation {
+    font-size: 2em;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.skill, .project, .timeline-item, .testimonial, #contact {
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #ccc;
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: green;
+    width: 0%;
+}
+
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Dark Theme Styles */
+.dark-theme header {
+    background-color: #333;
+}
+
+.dark-theme .progress-bar {
+    background-color: #555;
+}
+
+.dark-theme .progress-bar::before {
+    background-color: #50b3a2;
+}
