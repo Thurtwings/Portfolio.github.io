@@ -127,7 +127,10 @@ body.dark-theme {
     background-color: #121212;
     color: #ffffff;
 }
-
+.imgProjet {
+    object-fit: contain;
+    border-radius: 15%;
+}
 .dark-theme a {
     color: #bb86fc;
 }
