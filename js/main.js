@@ -58,6 +58,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
 function toggleExperience(id)
 {
     var x = document.getElementById(id);
@@ -72,10 +73,59 @@ function toggleExperience(id)
     }
 }
 
-// Theme toggle button
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-theme');
+function toggleDarkMode() {
+    var body = document.body;
+    var toggleButton = document.getElementById('darkModeToggle');
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    if (body && toggleButton) {
+        body.classList.toggle('dark-mode');
+        toggleButton.innerText = body.classList.contains('dark-mode') ? 'Mode Clair' : 'Mode Sombre';
+
+        if (body.classList.contains('dark-mode')) {
+            // Passer au mode sombre
+            navLinks.forEach(link => {
+                link.classList.remove('text-dark');
+                link.classList.add('text-white');
+            });
+        } else {
+            // Passer au mode clair
+            navLinks.forEach(link => {
+                link.classList.remove('text-white');
+                link.classList.add('text-dark');
+            });
+        }
+    }
+}
+function smoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
+}
+
+
+// Function to set up everything after the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize language
+    toggleLanguage();
+
+    // Initialize smooth scrolling
+    smoothScroll();
+
+    // Initialize dark mode toggle
+    const slideThree = document.getElementById('darkModeToggle');
+    if (slideThree) {
+        slideThree.addEventListener('change', toggleDarkMode);
+    } else {
+        console.error('Element with ID "slideThree" not found');
+    }
+
 });
+
+
+
