@@ -1,7 +1,11 @@
 var language = language || 'fr';
-
+toggleLanguage();
 function toggleLanguage() {
     if (language === 'fr') {
+
+        //Title
+        document.getElementById('pageTitle').innerText = "Steeven Leneveu's portfolio";
+        //Navbar
         document.getElementById('languageToggle').innerText = 'Switch to French';
         document.getElementById('main_title').innerText = 'Welcome to My Portfolio';
         document.getElementById('about_me_title').innerText = 'About Me';
@@ -18,6 +22,9 @@ function toggleLanguage() {
         document.getElementById('prog_lang').innerText = 'Programming languages';
         language = 'en';
     } else {
+        //Title
+        document.getElementById('pageTitle').innerText = "Portfolio de Steeven Leneveu";
+
         document.getElementById('languageToggle').innerText = 'Traduire en Anglais';
         document.getElementById('main_title').innerText = 'Bienvenue sur mon portfolio';
         document.getElementById('about_me_title').innerText = 'À propos de moi';
@@ -35,8 +42,8 @@ function toggleLanguage() {
         language = 'fr';
     }
 }
-function toggleCardDetails(cardId)
-{
+
+function toggleCardDetails(cardId){
     const card = document.getElementById(cardId);
     const details = card.querySelector('.card-details');
 
@@ -58,20 +65,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-function toggleExperience(id)
-{
-    var x = document.getElementById(id);
-
-    if (x.style.display === "none")
-    {
-        x.style.display = "block";
-    }
-    else
-    {
-        x.style.display = "none";
-    }
-}
 
 function toggleDarkMode() {
     var body = document.body;
@@ -97,6 +90,7 @@ function toggleDarkMode() {
         }
     }
 }
+
 function smoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -108,8 +102,6 @@ function smoothScroll() {
     });
 }
 
-
-// Function to set up everything after the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize language
     toggleLanguage();

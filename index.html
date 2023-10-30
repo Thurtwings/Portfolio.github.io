@@ -4,21 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-    <meta content="Portfolio de Steeven Leneveu, un développeur de jeux talentueux." name="description" />
-    <title>Portfolio de Steeven Leneveu</title>
+    <meta content="Portfolio de Steeven Leneveu, un développeur de jeux." name="description" />
+    <title id="pageTitle"></title>
     <link rel="website icon" type="png" href="img/Logo_TW_2.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"/>
     
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/Logo_TW_2.png" style="height: 70px" width="70px">
-            </a>
+            <a class="navbar-brand" href="#home"> <img alt="logo" src="img/Logo_TW_2.png" style="height: 70px" width="70px"> </a>
             <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -29,29 +30,19 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" id="about_nav">
-                            À propos
-                        </a>
+                        <a class="nav-link" href="#about" id="about_nav">À propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills" id="skills_nav">
-                            Compétences
-                        </a>
+                        <a class="nav-link" href="#skills" id="skills_nav">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">
-                            Experience
-                        </a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            Portfolio
-                        </a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactTitle">
-                            Contact
-                        </a>
+                        <a class="nav-link" href="#contactTitle">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
@@ -64,10 +55,8 @@
                 
             </div>
             <section title=".slideThree">
-                <!-- .slideThree -->
                 <h6>Mode sombre</h6>
                 <div class="slideThree">
-                    
                     <input type="checkbox" value="None" id="darkModeToggle" name="check"/>
                     <label for="darkModeToggle"></label>
                 </div>
@@ -75,11 +64,12 @@
             </section>
         </div>
         
-        <button class="btn btn-secondary" id="languageToggle" onclick="toggleLanguage()">
+        <!--<button class="btn btn-secondary" id="languageToggle" onclick="toggleLanguage()">
             Switch to English
-        </button>
+        </button>-->
+        <button class="custom-btn btn-12" onclick="toggleLanguage()"><span>Click!</span><span>Switch to English</span></button>
     </nav>
-    <section class="bg-primary text-white text-center py-5" id="home">
+    <section class="bg-primary text-white text-center py-5 mb-3" id="home">
         <div class="container">
             <h1 id="main_title">
                 Bienvenue sur mon portfolio
@@ -89,10 +79,10 @@
             </p>
         </div>
     </section>
-    <section class="text-center py-5" id="about">
+    <section class="text-center py-5 mb-3" id="about">
         <div class="container">
             <img alt="Your Photo" id="aboutPhoto" src="img/Moi.jpg" style=""/>
-            <h2 id="about_me_title">À propos de moi</h2>
+            <h2 id="about_me_title" class="mb-3 meriend">À propos de moi</h2>
             <p id="about_me_description">
                 Je suis un développeur passionné avec une expertise en Unity, C# et développement web.
             </p>
@@ -100,13 +90,14 @@
     </section>
     <section class="text-center py-5" id="skills">
         <div class="container">
-            <h2 id="skills_title">Compétences</h2>
+            <h2 id="skills_title" class="mb-4 meriend">Compétences</h2>
             <div class="row">
+                
                 <div class="col-md-3">
                     <b>
-                    <h5 id="software">
+                    <h4 id="software" class="mb-4">
                         Logiciels
-                    </h5></b>
+                    </h4></b>
                     <b><p>Unity</p></b>
                     <b><p>Visual Studio</p></b>
                     <b><p>Visual Studio Code</p></b>
@@ -114,7 +105,7 @@
                     <b><p>Blender</p></b>
                 </div>
                 <div class="col-md-3">
-                    <b><h5>Adobe</h5></b>
+                    <b><h4 class="mb-4">Adobe</h4></b>
                     <b><p>Illustrator</p></b>
                     <b><p>Photoshop</p></b>
                     <b><p>InDesign</p></b>
@@ -123,13 +114,13 @@
                     <b><p>Acrobat Pro</p></b>
                 </div>
                 <div class="col-md-3">
-                    <b><h5>Office 365</h5></b>
+                    <b><h4 class="mb-4">Office 365</h4></b>
                     <b><p>Word</p></b>
                     <b><p>Excel</p></b>
                     <b><p>PowerPoint</p></b>
                 </div>
                 <div class="col-md-3">
-                    <b><h5 id="prog_lang">Langages de programmation</h5></b>
+                    <b><h4 id="prog_lang" class="mb-4">Langages de programmation</h4></b>
                     <b><p>C#, Java</p></b>
                     <b><p>Javascript</p></b>
                     <b><p>PHP</p></b>
@@ -140,9 +131,9 @@
             </div>
         </div>
     </section>
-    <section class="text-center py-5" id="experience">
+    <section class="text-center py-5 mb-4" id="experience">
         <div class="container">
-            <h2 id="experience_title">
+            <h2 id="experience_title" class="mb-4 meriend">
                 Expérience
             </h2>
             <div class="row">
@@ -206,7 +197,10 @@
                             </p>
                             <div class="card-details" style="display:none;">
                                 <p id="exp_3_desc_full_desc">
-                                    Full description
+                                    Une chasse aux trésors en réalité augmentée marker-less, destinée à un public parent enfant.
+                                    Il s’agit d’une application pour smartphones et tablettes Android supportant la réalité augmentée qui permet de faire apparaître différents éléments dans le monde,
+                                    afin de tracer par étape un chemin grâce à des indices menant à un trésor, virtuel ou réel.
+                                    
                                 </p>
                                 <!-- Add video or carousel here -->
                             </div>
@@ -239,14 +233,11 @@
                 <!-- Ludimension -->
             </div>
             <div class="card" id="card_exp_5" onclick="toggleCardDetails('card_exp_5')">
-                
-                
                 <div class="card-body">
                     <h5>
                         Développeur Unity
                         <b>
                             Game Jams
-                            
                         </b>
                     </h5>
                     <p id="exp_5_desc_short">
@@ -267,9 +258,9 @@
             </div>
         </div>
     </section>
-    <section class="text-center py-5" id="portfolio">
+    <section class="text-center py-5 mb-4" id="portfolio">
         <div class="container">
-            <h2 id="portfolio_title"> Portfolio </h2>
+            <h2 id="portfolio_title" class="mb-4 meriend"> Portfolio </h2>
             <div class="row">
                 <!-- A robot's journey  -->
                 <div class="col-md-4 mb-4">
@@ -317,13 +308,11 @@
                                 La Chasse aux trésors de Papy Jean
                             </h5>
                             <p id="portfolio_proj2_short_desc">
-                                Jeu en RA à 2 joueurs de chasse aux trésors
+                                La chasse au trésor de Papy Jean vous permet d’organiser un jeu de piste grandeur nature ...
                             </p>
                             <div class="card-details" style="display:none;">
                                 <p id="portfolio_proj2_full_desc">
-                                    où le premier joueur place les indices et coffres, puis donne le mobile au second
-                                    joueur qui suit les indices jusqu’à trouver les coffres et
-                                    découvrir les trésors laissés par le premier joueur
+                                     pour vos enfants et petits-enfants à travers votre maison ou votre jardin en réalité augmentée. D’adorables lutins que vous aurez placés dans le décor guideront vos enfants jusqu’au trésor.
                                 </p>
                                 <div class="video-container">
                                     <iframe
@@ -475,7 +464,7 @@
         </div>
     </section>
     <div class="container">
-        <h2 id="contact_title">
+        <h2 id="contact_title" class="mb-4 meriend">
             Contact
         </h2>
         <form action="https://formspree.io/f/mleybkwl" class="bg-light p-5 rounded contact" id="contactForm"
@@ -490,7 +479,7 @@
                 <label class="form-label" for="email" id="label_email">
                     Email
                 </label>
-                <input class="form-control" id="email" name="_replyto" required="" type="email" />
+                <input class="form-control" id="email" name="_replyto" required="" type="email"/>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="message" id="label_message">
@@ -503,7 +492,19 @@
             </button>
         </form>
     </div>
-    
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://github.com/Thurtwings" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/thurtwings/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/steeven-leneveu-15757818a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="short-bio">
+                <p>Steeven Leneveu - Développeur de jeux. Pour des collaborations ou des projets, contactez-moi via la rubrique contact ou sur LinkedIn</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 <script src="js/main.js" defer>
 </script>
