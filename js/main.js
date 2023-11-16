@@ -11,8 +11,8 @@ function toggleLanguage() {
         document.getElementById('experience_title').innerText = 'Experience';
         document.getElementById('portfolio_title').innerText = 'Portfolio';
         document.getElementById('contact_title').innerText = 'Contact';
-        document.getElementById('tagline').innerText = 'Experienced Unity and Web Developer';
-        document.getElementById('about_me_description').innerText = 'I am a passionate developer with expertise in Unity, C#, and web development.';
+        document.getElementById('tagline').innerText = ' Unity and Web Applications Developer';
+        document.getElementById('about_me_description').innerText = 'I am a passionate developer with experiences in Unity, C#, and web development.';
         document.getElementById('cv').innerText = 'See my CV';
         document.getElementById('software').innerText = 'Softwares';
         document.getElementById('prog_lang').innerText = 'Programming languages';
@@ -27,8 +27,8 @@ function toggleLanguage() {
         document.getElementById('experience_title').innerText = 'Expérience';
         document.getElementById('portfolio_title').innerText = 'Portfolio';
         document.getElementById('contact_title').innerText = 'Contact';
-        document.getElementById('tagline').innerText = 'Développeur Unity et Web expérimenté';
-        document.getElementById('about_me_description').innerText = 'Je suis un développeur passionné avec une expertise en Unity, C# et développement web.';
+        document.getElementById('tagline').innerText = 'Développeur Unity et Applications Web ';
+        document.getElementById('about_me_description').innerText = 'Je suis un développeur passionné avec une expériences en Unity, C# et développement web.';
         document.getElementById('cv').innerText = 'Consulter mon CV';
         document.getElementById('software').innerText = 'Logiciels';
         document.getElementById('prog_lang').innerText = 'Langages de programmation';
