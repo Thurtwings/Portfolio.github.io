@@ -158,7 +158,9 @@ body.dark-theme {
 .dark-theme .card a {
     color: #bb86fc;
 }
-
+.logiciels {
+    font-weight: bold;
+}
 .dark-theme .card-title,
 .dark-theme .card-text {
     color: #ffffff;

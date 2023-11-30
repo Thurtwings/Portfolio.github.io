@@ -3,7 +3,7 @@ var language = language || 'fr';
 function toggleLanguage() {
     if (language === 'fr') {
         document.getElementById('languageToggle').innerText = 'Switch to French';
-        document.getElementById('main_title').innerText = 'Welcome to My Portfolio';
+        document.getElementById('main_title').innerText = 'Welcome to My Portfolio. This website is still under construction';
         document.getElementById('about_me_title').innerText = 'About Me';
         document.getElementById('about_nav').innerText = 'About Me';
         document.getElementById('skills_title').innerText = 'Skills';
@@ -19,7 +19,7 @@ function toggleLanguage() {
         language = 'en';
     } else {
         document.getElementById('languageToggle').innerText = 'Traduire en Anglais';
-        document.getElementById('main_title').innerText = 'Bienvenue sur mon portfolio';
+        document.getElementById('main_title').innerText = 'Bienvenue sur mon portfolio. Ce site web est encore en construction';
         document.getElementById('about_me_title').innerText = 'À propos de moi';
         document.getElementById('about_nav').innerText = 'À propos';
         document.getElementById('skills_title').innerText = 'Compétences';
