@@ -1,550 +1,386 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-    <meta content="Portfolio de Steeven Leneveu, un développeur de jeux talentueux." name="description" />
-    <title>Portfolio de Steeven Leneveu</title>
-    <link rel="website icon" type="png" href="img/Logo_TW_2.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
+    <title>Steeven's Portfolio</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/Logo_Shield.png" style="height: 70px" width="70px">
-            </a>
-            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" id="about_nav">
-                            À propos
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
+        <div class="book">
+            <!--page de profil-->
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="imgs/casque.jpg" alt="ma photo">
+                    <h1>Steeven Leneveu</h1>
+                    <h3>Unity Game / XR Developer</h3>
+                    <h3>Web Applications Developer</h3>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/steeven-leneveu-15757818a/" target="_blank">
+                            <i class='bx bxl-linkedin bx-flashing-hover'></i>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills" id="skills_nav">
-                            Compétences
+                        <a href="https://github.com/Thurtwings?tab=repositories" target="_blank">
+                            <i class='bx bxl-github bx-flashing-hover' ></i>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">
-                            Experience
+                        <a href="https://www.youtube.com/@Thurtwings/videos" target="_blank">
+                            <i class='bx bxl-youtube bx-flashing-hover' ></i>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactTitle">
-                            Contact
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="https://drive.google.com/file/d/1U1GbsOlVEPgEnJo3SEImrZIozOl9WE-C/view?usp=sharing"
-                            id="cv" target="_blank">
-                            Consulter mon CV
-                        </a>
-                    </li>
-                </ul>
-                
-            </div>
-            <section title=".slideThree">
-                <!-- .slideThree -->
-                <h6>Mode sombre</h6>
-                <div class="slideThree">
-                    
-                    <input type="checkbox" value="None" id="darkModeToggle" name="check"/>
-                    <label for="darkModeToggle"></label>
+                        <a class="phone" ><i class='bx bxs-phone bx-flashing-hover'></i></a>
+                        <p class="phone-number">+33 07.69.22.43.44</p>
+                    </div>
+                    <p>Je suis Steeven Leneveu, un développeur Unity/C# et web enthousiaste, basé près de Mulhouse. 
+                        Formé en développement Unity/XR et en développement d'applications web, je transforme des idées 
+                        en réalités captivantes, avec une expertise allant de la VR/AR aux solutions web interactives. 
+                        Mes compétences techniques s'étendent à Unity, C#, ainsi qu'à divers langages web, appuyées par 
+                        des projets variés et innovants que vous pouvez explorer sur mon GitHub. Je suis passionné par 
+                        l'apprentissage continu et la recherche de défis qui enrichissent mon savoir-faire. 
+                        En dehors du code, mes passions pour les jeux vidéo, la culture manga et les voyages alimentent 
+                        ma créativité. À la recherche d'opportunités stimulantes, je suis prêt à apporter ma contribution 
+                        à votre entreprise avec dynamisme et innovation.
+                    </p>
+                    <div class="btn-box">
+                        <a href="https://drive.google.com/file/d/1A5pIFeIeUtuyWxkZPSIottKSfF1HurO8/view?usp=sharing" target="_blank" class="btn"><i class='bx bxs-file-pdf '></i> Download CV</a>
+                        <a href="#" class="btn contact-me">Contact Me</a>
+                    </div>
                 </div>
-                <!-- end .slideThree -->
-            </section>
+            </div>
+            <!-- pages 1-2 -->
+            <div class="book-page page-right turn" id="turn-1">
+                <!-- page 1 Experience 1/2-->
+                <div class="page-front">
+                    <h1 class="title">Experiences 1/2</h1>
+                        <div class="workeduc-box">
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2023 - 3 months</span>
+                                <h3>Internship Unity VR Developer - Cabinet d’Ergothérapie, Stéphanie Tampigny</h3>
+                                <ul>
+                                    <li>Engagé dans la recherche et le développement pour créer des prototypes VR améliorant l'engagement des patients.</li>
+                                    <li>Développé «ThéraFly VR», une application thérapeutique en réalité virtuelle (VR) pour Android.</li>
+                                    <li>Travail en méthodes Agile</li>
+                                </ul>
+                                    
+                                    
+                            </div>
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2023 - 1 month</span>
+                                <h3>Internship Unity AR Developer - Navy Bean Studio</h3>
+                                <p><ul>
+                                    <li>Participé au développement d’un jeu vidéo 2D pour mobile Android, «Berny’s Adventure».</li>
+                                    <li>Développement du mode difficile de «La chasse aux trésors de Papy Jean», apportant un soutien et connaissances technique en AR.</li>
+                                    <li>Travail en méthodes Agile</li>
+                                </ul>
+                                    
+                            </div>
+                            
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2022 - 6 months</span>
+                                <h3>Développeur Unity XR - 62 Ruby Street</h3>
+                                <p>
+                                    <ul>
+                                        <li>Développé une application 3D en réalité augmentée (AR) opérationnelle sur Android et iOS « 62 Ruby Street ».
+                                        <li>Conduit le prototypage et les itérations de développement pour améliorer l'expérience utilisateur de la future version de cette application. Utilisant entre autre l’ARDK Lightship de Niantic
+                                        <li>Collaboré avec des équipes transversales et internationnales pour intégrer des fonctionnalités innovantes répondant aux besoins des clients.
+                                        <li>Travail en méthodes Agile</li>
+                                    </ul>
+                                    
+                                    
+                                    </p>
+                            </div>
+                        </div>
+                        <span class="number-page">
+                            1
+                        </span>
+                        <span class="nextprev-btn" data-page="turn-1">
+                            <i class='bx bx-chevron-right bx-fade-right' ></i>
+                        </span>
+                </div>
+                <!-- page 2 Experience 2/2-->
+                <div class="page-back">
+                    <h1 class="title">Experiences 2/2</h1>
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2021 - 2 months</span>
+                            <h3>Internship Unity AR Developer - </h3>
+                            <p>
+                                Développé « ThéraFly VR », une application thérapeutique en réalité virtuelle (VR) pour Android.
+                                Engagé dans la recherche et le développement pour créer des prototypes VR améliorant l'engagement des patients.</p>
+                        </div>
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2023</span>
+                            <h3>Internship Unity VR Developer - Cabinet d’Ergothérapie, Stéphanie Tampigny</h3>
+                            <p>
+                                Développé « ThéraFly VR », une application thérapeutique en réalité virtuelle (VR) pour Android.
+                                Engagé dans la recherche et le développement pour créer des prototypes VR améliorant l'engagement des patients.</p>
+                        </div>
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2023</span>
+                            <h3>Internship Unity VR Developer - Cabinet d’Ergothérapie, Stéphanie Tampigny</h3>
+                            <p>
+                                Développé « ThéraFly VR », une application thérapeutique en réalité virtuelle (VR) pour Android.
+                                Engagé dans la recherche et le développement pour créer des prototypes VR améliorant l'engagement des patients.</p>
+                        </div>
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2023</span>
+                            <h3>Internship Unity VR Developer - Cabinet d’Ergothérapie, Stéphanie Tampigny</h3>
+                            <p>
+                                Développé « ThéraFly VR », une application thérapeutique en réalité virtuelle (VR) pour Android.
+                                Engagé dans la recherche et le développement pour créer des prototypes VR améliorant l'engagement des patients.</p>
+                        </div>
+                        
+                        
+                    </div>
+                    <span class="number-page">2</span>
+                    <span class="nextprev-btn back" data-page="turn-1"><i class='bx bx-chevron-left bx-fade-left' ></i></span>
+
+                </div>
+            </div>
+            <!-- page 3-4 -->
+            <div class="book-page page-right turn" id="turn-2">
+                <!-- page 3 Education -->
+                <div class="page-front">
+                    <h1 class="title">Education</h1>
+                        <div class="workeduc-box">
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2022 - 2023 <i class='bx bxs-graduation'></i>On site</span>
+                                <h3>Bachelor Mobile-Web app developer</h3>
+                                <h4>Université de Haute Alsace - SERFA - Mulhouse</h4>
+                                <ul>
+                                    <li>Spécialisation en développement d'applications mobile et web. </li>
+                                    <li>Projets dans différents langages web et mobile. </li>
+                                    <li>Projet de fin d'études centré sur l’application <a href="#">Visit My Cities</a>.</li>
+                                </ul>
+                            </div> 
+                            <div class="workeduc-content">
+                                <span class="year"><i class='bx bxs-calendar'></i>2019 - 2021 <i class='bx bxs-graduation'></i>On site</span>
+                                <h3>RNCP Niveau BTS Développement Unity / XR</h3>
+                                <h4>Institut ANATEN - Tarbes</h4>
+                                <ul>
+                                    <li>Formation de 2 ans spécialisée en développement de jeux et applications immersives avec Unity. </li>
+                                    <li>Différents projets sur Unity, en 2D, 3D, AR et VR</li>
+                                    <li>Projet de fin d'études sur <a href="#">La chasse aux trésors de Papy Jean</a>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="number-page">3</span>
+                    <span class="nextprev-btn next" data-page="turn-2"><i class='bx bx-chevron-right bx-fade-right' ></i></span>
+                </div>
+                
+                <!-- page 4 Skills -->
+                <div class="page-back">
+                    <h1 class="title">Skills</h1>
+                    <div class="skills-box">
+                        <div class="skill-content">
+                            <h3>Game Developement</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-unity bx-tada-hover'></i>Unity</span>
+                                <span><i class='bx bxl-slack-old bx-tada-hover' ></i>C#</span>
+                                <span><i class='bx bxl-visual-studio bx-tada-hover'></i>Visual Studio</span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Front-end</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-html5 bx-tada-hover' ></i>HTML</span>
+                                <span><i class='bx bxl-css3 bx-tada-hover' ></i>CSS</span>
+                                <span><i class='bx bxl-javascript bx-tada-hover' ></i>JS</span>
+                                <span><i class='bx bxl-react bx-tada-hover' ></i>React</span>
+                                <span><i class='bx bxl-bootstrap bx-tada-hover' ></i>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Back-End</h3>
+                            <div class="content">
+                                <!-- <span>Python</span> -->
+                                <span><i class='bx bxl-java bx-tada-hover' ></i>Java</span>
+                                <span><i class='bx bxl-php bx-tada-hover' ></i>PHP</span>
+                                <!-- <span>MySQL</span> -->
+                            </div>
+                        </div>
+                        <!-- <div class="skill-content">
+                            <h3>Title</h3>
+                            <div class="content">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Title</h3>
+                            <div class="content">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+                    <span class="number-page">4</span>
+                    <span class="nextprev-btn back" data-page="turn-2"><i class='bx bx-chevron-left bx-fade-left' ></i></span>
+                </div>
+            </div> 
+
+            <div class="book-page page-right turn" id="turn-3">
+                <!-- page 5 Services -->
+                <div class="page-front">
+                    <h1 class="title">Services</h1>
+                    <div class="services-box">
+                        <div class="service-content">
+                            <i class='bx bx-code-block' ></i><i class='bx bx-joystick' ></i><i class='bx bxl-meta' ></i>
+                            <h3>Programing</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                        <div class="service-content">
+                            <i class='bx bxs-file-doc' ></i>
+                            <h3>Programing</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                        <div class="service-content">
+                            <i class='bx bx-data' ></i>
+                            <h3>Database - Backoffice</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                        <div class="service-content">
+                            <i class='bx bx-search-alt' ></i>
+                            <h3>R & D</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                    </div>
+                    <span class="number-page">
+                        5
+                    </span>
+                    <span class="nextprev-btn" data-page="turn-3">
+                        <i class='bx bx-chevron-right bx-fade-right' ></i>
+                    </span>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Latest Project</h1>
+                    <div class="portfolio-box">
+                        <div class="img-box">
+                            <img src="imgs/LastestProjects.png" alt="LastestProjectCover">
+                        </div>
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>Project Name</h3>
+                                <a href="#">Live Preview<i class='bx bx-link-external' ></i></a>
+                            </div>
+                            <p>Tech used:</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <div class="btn-box">
+                                <a href="#" class="btn">Source Code<i class='bx bxl-git' ></i></a>
+                                <a href="#" class="btn">More Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <span class="number-page">6</span>
+                    <span class="nextprev-btn back" data-page="turn-3"><i class='bx bx-chevron-left bx-fade-left' ></i></span>
+                </div>
+            </div>
+            <div class="book-page page-right turn" id="turn-4"> <!--projets -->
+                <!-- page 7 Projets -->
+                <div class="page-front">
+                    <h1 class="title">Projects</h1>
+                    <div class="projects-box">
+                        <div class="project-content">
+                            <i class='bx bx-code-block' ></i><i class='bx bx-joystick' ></i><i class='bx bxl-meta' ></i>
+                            <h3>Programing</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                        <div class="project-content">
+                            <i class='bx bxs-file-doc' ></i>
+                            <h3>Programing</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                        <div class="project-content">
+                            <i class='bx bx-data' ></i>
+                            <h3>Database - Backoffice</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                        <div class="project-content">
+                            <i class='bx bx-search-alt' ></i>
+                            <h3>R & D</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read more</a>
+                        </div>
+                    </div>
+                    <span class="number-page">7</span>
+                    <span class="nextprev-btn" data-page="turn-4">
+                        <i class='bx bx-chevron-right bx-fade-right' ></i>
+                    </span>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Latest Project</h1>
+                    <div class="portfolio-box">
+                        <div class="img-box">
+                            <img src="imgs/LastestProjects.png" alt="LastestProjectCover">
+                        </div>
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>Project Name</h3>
+                                <a href="#">Live Preview<i class='bx bx-link-external' ></i></a>
+                            </div>
+                            <p>Tech used:</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <div class="btn-box">
+                                <a href="#" class="btn">Source Code<i class='bx bxl-git' ></i></a>
+                                <a href="#" class="btn">More Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <span class="number-page">8</span>
+                    <span class="nextprev-btn back" data-page="turn-4"><i class='bx bx-chevron-left bx-fade-left' ></i></span>
+                </div>
+            </div>
+            <!-- page 9 - 10 -->
+            <div class="book-page page-right turn" id="turn-5">
+                <div class="page-front">
+                    <span class="number-page">
+                        9
+                    </span>
+                    <span class="nextprev-btn" data-page="turn-5">
+                        <i class='bx bx-chevron-right bx-fade-right' ></i>
+                    </span>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Contact Me</h1>
+                    <div class="contact-box">
+                        <form action="https://formspree.io/f/mleybkwl" id="contactForm" method="POST">
+                            <input type="text" class="field" placeholder="Full Name" required>
+                            <input type="email" class="field" placeholder="Email Adress" required>
+                            <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                            <input type="submit" class="btn" value="Send Message">
+                        </form>
+                    </div>
+
+                    <span class="number-page">10</span>
+                    <span class="nextprev-btn back" data-page="turn-5"><i class='bx bx-chevron-left bx-fade-left' ></i></span>
+                    <a href="#" class="back-profile">
+                        <p>Profile</p>
+                        <i class='bx bxs-user'></i>
+                    </a>
+                </div>
+            </div>
         </div>
         
-        <button class="btn btn-secondary" id="languageToggle" onclick="toggleLanguage()">
-            Switch to English
-        </button>
-    </nav>
-    <section class="bg-primary text-white text-center py-5" id="home">
-        <div class="container">
-            <h1 id="main_title">
-                Bienvenue sur mon portfolio
-            </h1>
-            <p id="tagline">
-                Développeur Unity et Web expérimenté
-            </p>
-        </div>
-    </section>
-    <section class="text-center py-5" id="about">
-        <div class="container">
-            <img alt="Your Photo" id="aboutPhoto" src="img/Moi.jpg" style=""/>
-            <h2 id="about_me_title">À propos de moi</h2>
-            <p id="about_me_description">
-                Je suis un développeur passionné avec une expertise en Unity, C# et développement web.
-            </p>
-        </div>
-    </section>
-    <section class="text-center py-5" id="skills">
-        <div class="container logiciels">
-            <h2 id="skills_title">Compétences</h2><br>
-            <div class="row">
-                <div class="col-md-3">
-                    <h5 id="software">
-                        Logiciels
-                    </h5><br>
-                    <p>Unity</p>
-                    <p>Visual Studio</p>
-                    <p>Visual Studio Code</p>
-                    <p>JetBrainRider</p>
-                    <p>Blender</p><br>
-                </div>
-                <div class="col-md-3">
-                    <h5>Adobe</h5><br>
-                    <p>Illustrator</p>
-                    <p>Photoshop</p>
-                    <p>InDesign</p>
-                    <p>Premiere Pro</p>
-                    <p>AfterEffect</p>
-                    <p>Acrobat Pro</p><br>
-                </div>
-                <div class="col-md-3">
-                    <h5>Office 365</h5><br>
-                    <p>Word</p>
-                    <p>Excel</p>
-                    <p>PowerPoint</p><br>
-                </div>
-                <div class="col-md-3">
-                    <h5 id="prog_lang">Langages de programmation</h5><br>
-                    <p>C#, Java</p>
-                    <p>Javascript</p>
-                    <p>PHP</p>
-                    <p>React / React Native</p>
-                    <p>Python</p>
-                    <p>MySQL</p><br>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="text-center py-5" id="experience">
-        <div class="container">
-            <h2 id="experience_title">
-                Expérience
-            </h2>
-            <div class="row">
-                <div class="col-md-6 mb-4" id="exp_1">
-                    <div class="card" id="card_exp_1" onclick="toggleCardDetails('card_exp_1')">
-                        <div class="card-body">
-                            <h5>
-                                Stage Développeur Unity VR
-                                <b>
-                                    Stéphanie Tampigny Ergothérapeute
-                                </b>
-                            </h5>
-                            <p id="exp_1_desc_short">
-                                Développement d'un prototype d'une application VR à but thérapeutique qui croise la réalité virtuelle et l'ergothérapie« ThéraFly VR »
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="exp_1_desc_full_desc">
-    
-                                    <strong>TheraFly VR</strong> est un projet ambitieux qui intègre <strong>la réalité virtuelle dans le champ de l'ergothérapie</strong>. Son objectif principal est de créer une <strong>application VR</strong>, développée avec le moteur de jeu <strong>Unity</strong>, pour aider les patients dans leur processus de réadaptation. Cette application propose des <strong>environnements virtuels immersifs</strong> et des scénarios conçus pour stimuler les capacités cognitives et motrices des patients.<br><br>
-    
-                                    La force de <strong>TheraFly VR</strong> réside dans son <strong>approche centrée sur l'utilisateur</strong>. Les commandes sont intuitives et adaptées aux besoins spécifiques des patients, facilitant ainsi leur interaction avec l'environnement virtuel. L'application permet également un <strong>suivi personnalisé des progrès</strong> de chaque patient, essentiel pour les ergothérapeutes dans l'évaluation et l'ajustement des traitements.<br><br>
-    
-                                    Sur le plan technologique, <strong>TheraFly VR</strong> n'utilise pas seulement <strong>Unity</strong>, mais également une gamme de <strong>plugins et de SDKs VR</strong> pour assurer une expérience fluide et compatible avec divers équipements VR. Bien que ces technologies ne soient pas extrêmement avancées, elles sont optimisées pour offrir une expérience utilisateur de qualité, avec un accent sur la <strong>fiabilité et l'accessibilité</strong>.<br><br>
-    
-                                    Le <strong>respect de la confidentialité</strong> et de la <strong>sécurité des données</strong> des patients est une priorité absolue dans le développement de <strong>TheraFly VR</strong>. L'application est conçue pour garantir la protection des informations personnelles et médicales, conformément aux normes de confidentialité.<br><br>
-    
-                                    En résumé, <strong>TheraFly VR</strong> est une solution prometteuse pour moderniser l'ergothérapie. Elle combine <strong>la technologie VR</strong> et les pratiques de réadaptation pour offrir un outil à la fois efficace et personnalisable, destiné à améliorer la qualité de vie des patients.<br><br>
-    
-    
-    
-    
-    
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/izqpKmrhnFc?si=CcTH10ug82ddqNXm&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4" id="exp_2">
-                    <div class="card" id="card_exp_2" onclick="toggleCardDetails('card_exp_2')">
-                        <div class="card-body">
-                            <h5>
-                                Stage Développeur Unity
-                                <b>
-                                    Navy Bean Studio
-                                </b>
-                            </h5>
-                            <p id="exp_2_desc_short">
-                                Développement jeu vidéo 2D Android « Berny's Adventure » &amp; AR Android « La chasse aux trésors de Papy Jean »
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="exp_2_desc_full_desc">
-                                    Ce stage a eu lieu lors de la license professionnelle que j'ai suivi. Entièrement en télétravail,
-                                    j'ai travaillé sur 2 projets, mais principalement sur
-                                    « La chasse aux trésors de Papy Jean ». J'ai développé le mode difficile de cette application lors de ce stage de 1 mois et demi
-                                    j'ai donné quelques conseils et j'ai apporté quelques solutions face à certains problèmes sur « Berny's Adventure »
-                                </p>
-                                <!-- Add video or carousel here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Navy bean -->
-                <div class="col-md-6 mb-4" id="exp_3">
-                    <div class="card" id="card_exp_3" onclick="toggleCardDetails('card_exp_3')">
-                        <div class="card-body">
-                            <h5>
-                                Développeur Unity -
-                                <b>
-                                    Powershop
-                                </b>
-                            </h5>
-                            <p id="exp_3_desc_short">
-                                Développement application 3D - AR vidéo mobile Android - IOS «62 Ruby Street» V.0 -
-                                Prototypage «62 Ruby Street» V.1
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="exp_3_desc_full_desc">
-                                    Full description
-                                </p>
-                                <!-- Add video or carousel here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 62 Ruby street -->
-                <div class="col-md-6 mb-4" id="exp_4">
-                    <div class="card" id="card_exp_4" onclick="toggleCardDetails('card_exp_4')">
-                        <div class="card-body">
-                            <h5>
-                                Stage Développeur Unity
-                                <b>
-                                    Pyrénées Manga
-                                </b>
-                            </h5>
-                            <p id="exp_4_desc_short">
-                                Développement jeu vidéo AR Android « La chasse aux trésors de Papy Jean »
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="exp_4_desc_full_desc">
-                                    Full description
-                                </p>
-                                <!-- Add video or carousel here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pyrénées manga -->
-                <div class="col-md-6 mb-4" id="exp_5">
-                    <div class="card" id="card_exp_5" onclick="toggleCardDetails('card_exp_5')">
-                        <div class="card-body">
-                            <h5>
-                                Stage Développeur Unity
-                                <b>
-                                    Ludimension Studio
-                                </b>
-                            </h5>
-                            <p id="exp_5_desc_short">
-                                Développement applications XR Android - IOS
-                                «Maestro» - «Super Toon Studio»
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="exp_5_desc_full_desc">
-                                    Full description
-                                </p>
-                                <!-- Add video or carousel here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Ludimension -->
-            </div>
-            <div class="card" id="card_exp_6" onclick="toggleCardDetails('card_exp_6')">
-                
-                
-                <div class="card-body">
-                    <h5>
-                        Développeur Unity
-                        <b>
-                            Game Jams
-                            
-                        </b>
-                    </h5>
-                    <p id="exp_6_desc_short">
-                        Participation à plusieurs Game Jams entre 2020 et 2023
-                    </p>
-                    <div class="card-details" style="display:none;">
-                        <p id="exp_6_desc_full_desc">
-                        <p>  <a href="https://itch.io/jam/game-jam-fraxarg-2020"> FraXArg </a>une game jam organisée par FUNDAV la fondation argentine des jeux vidéo.</p>
-                        <p>  <a href="https://itch.io/jam/brackeys-5"> Brackeys Game Jam 2021.1 </a>une game jam organisée par Brackeys.</p>
-                        <p>  <a href="https://itch.io/jam/one-minute-jam"> FraXArg </a>une game jam organisée par Far Side Virtual.</p>
-                        <p>  Et plusieurs autres de <a href="https://gmtk.itch.io/">GMTK</a>, où je n'ai pas pu terminer a temps </p>
-                        </p>
-                        <p><a href="https://thurtwings.itch.io/escape-it"> Lien vers Escape it!</a></p>
-                        <p><a href="https://thurtwings.itch.io/project-out-of-limbs"> Lien vers Out of Limbs</a></p>
-                        <p><a href="https://thurtwings.itch.io/survivor-ship"> Lien vers Survivor Ship</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="text-center py-5" id="portfolio">
-        <div class="container">
-            <h2 id="portfolio_title"> Portfolio </h2>
-            <div class="row">
-                <!-- A robot's journey  -->
-                <div class="col-md-4 mb-4">
-                    <div class="card" id="proj1" onclick="toggleCardDetails('proj1')">
-                        <img class="imgProjet" alt="CTPJ" src="img/logoARJ.png" />
-                        <div class="card-body">
-                            <h5>
-                                A robot’s Journey
-                            </h5>
-                            <p id="portfolio_proj1_short_desc">
-                                Jeu à la 3e personne où l’on incarne B3E
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="portfolio_proj1_full_desc">
-                                    un robot en quête
-                                    d’améliorations.
-                                    Sur sa planète d'origine, B3E n'est qu'un simple petit robot ouvrier. Lors d'un
-                                    voyage vers une planète voisine à la sienne, il est percuté par un objet céleste et
-                                    part à la dérive pendant plusieurs années et se met donc en mode veille.
-                                    Un jour, son vaisseau s'écrase sur une petite planète. L'explosion du crash
-                                    déclenche le bouclier électromagnétique du vaisseau, B3E est traversé par ce dernier
-                                    se retrouve rechargé par la charge électromagnétique du bouclier et se réveille.
-                                    Sa nouvelle mission est simple. Il doit retourner chez lui, mais il lui faut un
-                                    vaisseau...
-                                </p>
-                                <div class="video-container">
-                                    <iframe
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen="" frameborder="0" height="400"
-                                        src="https://www.youtube.com/embed/opyBg4Ez2NE?si=QTb_0tjuZIdQ0KdE"
-                                        title="YouTube video player" width="420">
-                                    </iframe>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- CTPJ               -->
-                <div class="col-md-4 mb-4">
-                    <div class="card" id="proj2" onclick="toggleCardDetails('proj2')">
-                        <img class="imgProjet" alt="CTPJ" src="img/ctpj.png" />
-                        <div class="card-body">
-                            <h5>
-                                La Chasse aux trésors de Papy Jean
-                            </h5>
-                            <p id="portfolio_proj2_short_desc">
-                                Jeu en RA à 2 joueurs de chasse aux trésors
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="portfolio_proj2_full_desc">
-                                    où le premier joueur place les indices et coffres, puis donne le mobile au second
-                                    joueur qui suit les indices jusqu’à trouver les coffres et
-                                    découvrir les trésors laissés par le premier joueur
-                                </p>
-                                <div class="video-container">
-                                    <iframe
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen="" frameborder="0" height="400"
-                                        src="https://www.youtube.com/embed/5vut-W7O84I?si=aGlB4z4Ui8ZWs-Fx"
-                                        title="YouTube video player" width="420">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Visit my cities    -->
-                <div class="col-md-4 mb-4">
-                    <div class="card" id="proj4" onclick="toggleCardDetails('proj4')">
-                        <img class="imgProjet" alt="VMC" src="img/vmc.png" />
-                        <div class="card-body">
-                            <h5>
-                                Visit my cities
-                            </h5>
-                            <p id="portfolio_proj4_short_desc">
-                                Application mobile
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="portfolio_proj4_full_desc">
-                                    Il s'agit d'un projet réalisé en java
-                                </p>
-                                <a href="https://github.com/Thurtwings/Visit_my_Cities_Android" target="_blank">
-                                    Lien vers le repos
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Quiz One Piece     -->
-                <div class="col-md-4 mb-4">
-                    <div class="card" id="proj5" onclick="toggleCardDetails('proj5')">
-                        <img class="imgProjet" alt="Quiz" src="img/onepiece.png" />
-                        <div class="card-body">
-                            <h5>
-                                Quiz One Piece
-                            </h5>
-                            <p id="portfolio_proj5_short_desc">
-                                Jeu de type quiz
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="portfolio_proj5_full_desc">
-                                    Il s'agit d'un projet réalisé en react native / Javascript sur ma licence préférée
-                                    qu'est One Piece
-                                </p>
-                                <a href="https://github.com/Thurtwings/Interro_React_Steeven_LENEVEU" target="_blank">
-                                    Lien vers le repos
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Speed run site     -->
-                <div class="col-md-4 mb-4">
-                    <div class="card" id="proj6" onclick="toggleCardDetails('proj6')">
-                        <img class="imgProjet" alt="Quiz" src="img/logoSpeedRun.png" />
-                        <div class="card-body">
-                            <h5>
-                                Web App Speedrun
-                            </h5>
-                            <p id="portfolio_proj6_short_desc">
-                                Site web sur le speedrun
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="portfolio_proj6_full_desc">
-                                    Il s'agit d'un projet réalisé en html et php
-                                </p>
-                                <a href="https://github.com/Thurtwings/WebAppProject" target="_blank">
-                                    Lien vers le repos
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Vivarium           -->
-                <div class="col-md-4 mb-4">
-                    <div class="card" id="proj7" onclick="toggleCardDetails('proj7')">
-                        <img class="imgProjet" alt="terrarium" src="img/Vivarium.png" />
-                        <div class="card-body">
-                            <h5>
-                                Terrarium
-                            </h5>
-                            <p id="portfolio_proj7_short_desc">
-                                Back office Gestion de Serpents
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="portfolio_proj7_full_desc">
-                                    Il s'agit d'un projet réalisé en html et php
-                                </p>
-                                <a href="https://github.com/Thurtwings/DevoirPHPSteeven" target="_blank">
-                                    Lien vers le repos
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bejeweled          -->
-                <div class="col-md-4 mb-4">
-                    <div class="card" id="proj3" onclick="toggleCardDetails('proj3')">
-                        <img class="imgProjet" alt="Bejeweled" src="img/logoBejeweled.jpg" />
-                        <div class="card-body">
-                            <h5>
-                                Bejeweled Like
-                            </h5>
-                            <p id="portfolio_proj3_short_desc">
-                                Jeu 2D de type match 3
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="portfolio_proj3_full_desc">
-                                    Il s'agit d'un projet réalisé en react native / Javascript pour un devoir
-                                </p>
-                                <a href="https://github.com/Thurtwings/Bejeweled_Expo_React_Native" target="_blank">
-                                    Lien vers le repos
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Taquin          -->
-                <div class="col-md-4 mb-4">
-                    <div class="card" id="proj8" onclick="toggleCardDetails('proj8')">
-                        <img class="imgProjet" alt="Taquin" src="img/logoTaquin.png" />
-                        <div class="card-body">
-                            <h5>
-                                Test Technique Taquin
-                            </h5>
-                            <p id="portfolio_proj8_short_desc">
-                                Jeu 2D de type puzzle
-                            </p>
-                            <div class="card-details" style="display:none;">
-                                <p id="portfolio_proj8_full_desc">
-                                    Il s'agit d'un test technique réalisé sur Unity en moins de 7 heures
-                                </p>
-                                <a href="https://github.com/Thurtwings/Test" target="_blank">
-                                    Lien vers le repos
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Nouveau projets à ajouter ici -->
-            </div>
-        </div>
-    </section>
-    <div class="container">
-        <h2 id="contact_title">
-            Contact
-        </h2>
-        <form action="https://formspree.io/f/mleybkwl" class="bg-light p-5 rounded contact" id="contactForm"
-            method="POST">
-            <div class="mb-3" id="contactTitle">
-                <label class="form-label" for="name" id="label_name">
-                    Nom
-                </label>
-                <input class="form-control" id="name" name="name" required="" type="text" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label" for="email" id="label_email">
-                    Email
-                </label>
-                <input class="form-control" id="email" name="_replyto" required="" type="email" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label" for="message" id="label_message">
-                    Message
-                </label>
-                <textarea class="form-control" id="message" name="message" required="" rows="4"></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">
-                Envoyer le message
-            </button>
-        </form>
     </div>
-    
-</body>
-<script src="js/main.js" defer>
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.9.0/mdb.min.js" type="text/javascript">
-</script>
 
+    <script src="js/script.js"></script>
+    <script src="js/translate.js"></script>
+</body>
 </html>
