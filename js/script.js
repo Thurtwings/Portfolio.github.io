@@ -1,95 +1,61 @@
-//tourner les pages
-const pageTurnBtn = document.querySelectorAll('.nextprev-btn');
+/*==================== toggle icon navbar ====================*/
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-pageTurnBtn.forEach((el, index) => {
-    el.onclick = () => {
-        const pageTurnId = el.getAttribute('data-page');
-        const pageTurn = document.getElementById(pageTurnId);
-
-        if(pageTurn.classList.contains('turn'))
-        {
-            pageTurn.classList.remove('turn');
-            setTimeout(() => {
-                pageTurn.style.zIndex = 20 - index;
-            }, 500)
-        }
-        else
-        {
-            pageTurn.classList.add('turn');
-            setTimeout(() => {
-                pageTurn.style.zIndex = 20 + index;
-            }, 500)
-        }
-    }
-})
-
-const pages = document.querySelectorAll('.book-page.page-right');
-const contactMeBtn = document.querySelector('.btn.contact-me');
-
-contactMeBtn.onclick = () => {
-    pages.forEach((page, index) => {
-        setTimeout(() => {
-            page.classList.add('turn');
-
-            setTimeout(() => {
-                page.style.zIndex = 20 + index;
-            }, 500);
-        }, (index + 1) * 200 + 100)
-    })
-}
-
-let totalPages = pages.length;
-let pageNumber = 0;
-function ReverseIndex()
-{
-    pageNumber--;
-    if(pageNumber < 0)
-    {
-        pageNumber = totalPages - 1;
-    }
-}
-
-const backProfileBtn = document.querySelector('.back-profile');
-
-backProfileBtn.onclick = () => {
-    pages.forEach((_, index) => {
-        setTimeout(() => {
-            ReverseIndex();
-            pages[pageNumber].classList.remove('turn');
-
-            setTimeout(() => {
-                ReverseIndex();
-                pages[pageNumber].style.zIndex = 10 + index;
-            }, 500);
-        }, (index + 1) * 100 + 100);
-    })
-}
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
 
 
-const coverRight = document.querySelector(".cover.cover-right");
-const pageLeft = document.querySelector(".book-page.page-left");
-setTimeout(() => {
-    coverRight.classList.add('turn')
-}, 2100);
-setTimeout(() => {
-    coverRight.style.zIndex = -1;
-}, 2800);
+/*==================== scroll sections active link ====================*/
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-setTimeout(() => {
-    pageLeft.style.zIndex = 20;
-}, 3200);
-pages.forEach((_, index) => {
-    setTimeout(() => {
-        ReverseIndex();
-        pages[pageNumber].classList.remove('turn');
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-        setTimeout(() => {
-            ReverseIndex();
-            pages[pageNumber].style.zIndex = 10 + index;
-        }, 500);
-    }, (index + 1) * 100 + 2100);
-})
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
+        };
+    });
+    /*==================== sticky navbar ====================*/
+    let header = document.querySelector('header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+};
 
 
+/*==================== scroll reveal ====================*/
+ScrollReveal({
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
+/*==================== typed js ====================*/
+const typed = new Typed('.multiple-text', {
+    strings: ['a Unity Developer', 'an Application Developer', 'a Backend Developer'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
+});
