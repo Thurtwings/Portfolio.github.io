@@ -43,7 +43,45 @@
 <body>
   <div class="container">
     <h1 class="text-center my-5">Liste des Recherches - Lords Mobile</h1>
-
+    <div class="container my-5">
+        <h2 class="text-center">Calculateur de Coûts Personnalisé</h2>
+        
+        <!-- Formulaire de sélection des recherches et niveaux -->
+        <div class="mb-3">
+          <label for="research-select" class="form-label">Sélectionner une recherche :</label>
+          <select id="research-select" class="form-select"></select>
+        </div>
+      
+        <div class="mb-3">
+          <label for="level-select" class="form-label">Niveaux à inclure :</label>
+          <input type="number" id="level-min" class="form-control d-inline-block" style="width: 80px;" placeholder="Min" min="1">
+          <input type="number" id="level-max" class="form-control d-inline-block" style="width: 80px;" placeholder="Max" min="1">
+        </div>
+      
+        <button id="add-selection" class="btn btn-primary">Ajouter au calcul</button>
+      
+        <!-- Tableau des résultats -->
+        <div class="mt-4">
+          <h3>Coûts Totaux</h3>
+          <table class="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th>Nourriture</th><th>Pierre</th><th>Bois</th><th>Minerai</th><th>Or</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="total-food">0</td>
+                <td id="total-stone">0</td>
+                <td id="total-wood">0</td>
+                <td id="total-ore">0</td>
+                <td id="total-gold">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
     <div class="input-group mb-3">
       <span class="input-group-text">Vitesse de recherche (%)</span>
       <input type="number" id="research-speed" class="form-control" placeholder="Exemple : 50" value="0">
